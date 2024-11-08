@@ -38,7 +38,7 @@ export default function Home() {
   const getData = async () => {
     try {
       const response = await axios.get<FileUploadResponse>(
-        `${process.env.NEXT_PUBLIC_API_HOST}/api/files/list/`
+        `https://hadayetullah006.pythonanywhere.com/api/files/list/`
       );
 
       handleResponseData(response.data.all_files);
